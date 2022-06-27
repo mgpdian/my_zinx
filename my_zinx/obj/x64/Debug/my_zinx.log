@@ -1,0 +1,32 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.200.132”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  TcpChannel.cpp
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\IChannel.h(21,21): warning : ‘ByteMsg::content’ will be initialized after [-Wreorder]
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\IChannel.h(23,104): warning : base ‘sysIODicMsg’ [-Wreorder]
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\IChannel.h(23,9): warning : when initialized here [-Wreorder]
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.cpp(46,24): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.cpp(46,24): warning :    46 |         irecvlen = recv(m_socketfd, szBuff, sizeof(szBuff), MSG_DONTWAIT);
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.cpp(46,24): warning :       |                    ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.h(41,20): warning : ‘TcpListenChannel::m_port’ will be initialized after [-Wreorder]
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.h(41,20): warning :    41 |     unsigned short m_port = 0;
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.h(41,20): warning :       |                    ^~~~~~
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.h(40,28): warning : ‘TcpDataChannelFactory* TcpListenChannel::m_factory’ [-Wreorder]
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.h(40,28): warning :    40 |     TcpDataChannelFactory* m_factory = nullptr;
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.h(40,28): warning :       |                            ^~~~~~~~~
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.cpp(100,1): warning : when initialized here [-Wreorder]
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.cpp(109,9): warning : deleting object of abstract class type ‘TcpDataChannelFactory’ which has non-virtual destructor will cause undefined behavior [-Wdelete-non-virtual-dtor]
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.cpp(109,9): warning :   109 |         delete m_factory;
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.cpp(109,9): warning :       |         ^~~~~~~~~~~~~~~~
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.cpp(163,10): warning : unused variable ‘bRet’ [-Wunused-variable]
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.cpp(163,10): warning :   163 |     bool bRet = false;
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\TcpChannel.cpp(163,10): warning :       |          ^~~~
+  ZinxKernel.cpp
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\IChannel.h(21,21): warning : ‘ByteMsg::content’ will be initialized after [-Wreorder]
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\IChannel.h(23,104): warning : base ‘sysIODicMsg’ [-Wreorder]
+G:\vcs\Game_Server_Study\my_zinx\my_zinx\IChannel.h(23,9): warning : when initialized here [-Wreorder]
+  正在链接对象
+  my_zinx.vcxproj -> G:\vcs\Game_Server_Study\my_zinx\my_zinx\bin\x64\Debug\my_zinx.out
